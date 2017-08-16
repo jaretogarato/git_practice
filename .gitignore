@@ -1,0 +1,10 @@
+# Mac
+.DS_Store
+
+#VSCode
+.vscode/
+
+passwords.txt
+test.log
+production.log
+development.log
