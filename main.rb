@@ -1,10 +1,15 @@
+require 'colorize'
+require 'pry'
+
 def puts_git(cmd)
+  binding.pry
   puts `git #{cmd} -h`
 end
 
 def menu
-  puts '1: Enter Git Command'
-  puts '2: Exit'
+  puts 'MAIN MENU'.colorize(:cyan)
+  puts '1: Enter Git Command'.colorize(:blue)
+  puts '2: Exit'.colorize(:color => :light_blue, :background => :red)
   choice = gets.to_i
 
   case choice
